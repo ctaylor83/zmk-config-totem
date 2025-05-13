@@ -65,15 +65,15 @@
         Nav {
             display-name = "Nav";
             bindings = <
-              &kp TILDE       &trans     &kp UP_ARROW  &trans     &kp LBRC    &kp RBRC  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-              &kp LEFT_SHIFT  &kp LEFT   &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_ALT  &kp LEFT_WIN    &kp MINUS  &trans        &kp PLUS   &kp LPAR    &kp RPAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp PLUS
-                                         &trans        &trans     &trans      &trans    &trans        &kp NUMBER_0
+              &kp GRAVE       &kp PAGE_UP    &kp UP_ARROW  &kp HOME   &kp LBRC    &kp RBRC  &kp F9  &kp F10  &kp F11  &kp F12
+              &kp LEFT_SHIFT  &kp LEFT       &kp DOWN      &kp RIGHT  &kp LBKT    &kp RBKT  &kp F5  &kp F6   &kp F7   &kp F8
+&kp LEFT_ALT  &kp LEFT_WIN    &kp PAGE_DOWN  &kp INS       &kp END    &kp LPAR    &kp RPAR  &kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN
+                                             &trans        &trans     &trans      &trans    &trans  &trans
             >;
         };
 
         Num {
-            display-name = "Sym";
+            display-name = "Num";
             bindings = <
                 &kp EXCL              &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
                 &trans                &trans  &trans    &trans      &trans         &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL
@@ -82,12 +82,12 @@
             >;
         };
 
-        Fun {
-            display-name = "Fun";
+        Config {
+            display-name = "Config";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 0     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
+        &bootloader  &trans  &trans  &trans  &to 0     &trans  &trans  &trans  &trans  &trans
+        &sys_reset   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
